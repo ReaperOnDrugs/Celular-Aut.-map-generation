@@ -16,10 +16,11 @@ export default class CA {
             for (let j=0; j<row.length; j++){
                 let neighbours = 0;
                 for (let y=i-1; y<=i+1; y++){
+                    let nRow = old_map[y];
                     for (let x=j-1; x<=j+1; x++){
                         if (this.inBounds(x,y)){
                             if ((x!=j) || (y!=i)){
-                                if (old_map[y][x] == 0){
+                                if (nRow[x] == 0){
                                     neighbours++;
                                 }
                             }

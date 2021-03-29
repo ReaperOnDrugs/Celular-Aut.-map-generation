@@ -6,7 +6,7 @@ let canvas = document.querySelector("canvas");
 let ctx = canvas.getContext("2d");
 let MAP_HEIGHT = canvas.height;
 let MAP_WIDTH = canvas.width;
-let TILE_SIZE = 20;
+let TILE_SIZE = 50;
 let TILEn_HOR = MAP_WIDTH / TILE_SIZE;
 let TILEn_VERT = MAP_HEIGHT / TILE_SIZE;
 
@@ -38,9 +38,7 @@ function drawMap() {
 }
 
 function Auto() {
-    for (let i=0; i<4; i++){
-        map = Automaton.iterate(map);
-    }
+    map = Automaton.iterate(map);
     drawMap();
 }
 
