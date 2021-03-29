@@ -1,7 +1,7 @@
 let dens = document.getElementById("dens");
 
 function info() {
-    alert("Density represents how common walls are in percentage \n Best results are between 45% and 60%");
+    alert("Density represents how common walls are in percentage \n Best results are around 60%");
 }
 
 function check() {
