@@ -30,7 +30,7 @@ export default class CA {
                         }
                     }
                 }
-                if (neighbours > 4){
+                if ((neighbours > 4) || (neighbours == 0)){
                     iter_row.push(0);
                 }
                 else {
